@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>To Do List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="vh-100">
+    <div class="container h-100">
+        <div class="row">
+            <div class="col-md d-flex justify-content-center mt-5">
+                <h1><i class="fas fa-tasks"></i>&nbsp;To Dos</h1>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md d-flex justify-content-center">
+                <form id="form">
+                    <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
+                    <ul class="todos" id="todos"></ul>
+                  </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-flex justify-content-center">
+                <small>Left click to toggle completed. <br> Right click to delete todo</small>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+    <!-- Bootstrap JS and Popper bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
