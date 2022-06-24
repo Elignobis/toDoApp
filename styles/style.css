@@ -27,6 +27,17 @@ form {
   width: 400px;
 }
 
+ul li {
+  background-color: rgb(171, 242, 127) !important;
+  list-style: circle;
+  border-radius: 20px;
+}
+
+ul li:nth-child(odd) {
+  background-color: rgb(133, 133, 247) !important;
+  border-radius: 20px;
+}
+
 .input {
   border: none;
   color: #444;
@@ -34,6 +45,7 @@ form {
   padding: 1rem 2rem;
   display: block;
   width: 100%;
+  border-radius: 5px;
 }
 
 .input::placeholder {
@@ -45,7 +57,7 @@ form {
 }
 
 .todos {
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -59,13 +71,73 @@ form {
 }
 
 .todos li.completed {
-  color: #b6b6b6;
-  text-decoration: line-through;
+  color: #080808;
+  text-decoration: line-through red;
+  list-style: disc;
+}
+
+.todos li.completed:nth-child(odd){
+  color: #2d3366;
+  text-decoration: line-through red;
+  list-style: disc;
 }
 
 small {
-  color: #b5b5b5;
+  color: #040404;
   margin-top: 3rem;
   text-align: center;
 }
 
+.main-con {
+  margin-top: 20px;
+  background-color: rgb(213, 203, 203);
+  border-radius: 10px;
+  border: none;
+  width: 600px !important;
+  height: 600px !important;
+  overflow: scroll;
+  box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
+}
+
+.sort {
+  display: flex;
+}
+
+.add {
+  padding: 10px;
+  width: 25%;
+  background: rgb(232, 151, 22);
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.add:hover {
+  background-color: #bbb;
+}
+
+.Sortdv {
+  display: none;
+}
+
+/* Style Scroll bar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+  ::-webkit-scrollbar-track {
+  background: transparent; 
+}
+  ::-webkit-scrollbar-thumb {
+  background: rgb(232, 151, 22); 
+    border-radius:5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  
+  background: #555; 
+}

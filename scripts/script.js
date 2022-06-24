@@ -63,3 +63,6 @@ function updateLS() {
 
     localStorage.setItem('todos', JSON.stringify(todos))
 }
+
+
+sort
