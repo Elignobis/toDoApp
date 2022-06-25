@@ -22,25 +22,37 @@
             <div class="row mt-1">
                 <div class="col-md d-flex justify-content-center">
                     <small>
-                        Left click to toggle completed. <br> Right click to delete todo
+                        Left click to toggle completed. <br> Right click to delete todo. <br> Scroll to view more todos 
                     </small>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md d-flex justify-content-center">
                     <form id="form">
-                        <div class="sort">
-                            <span class="add">
-                                <button id="sorting" class="btn bg-transparent align-self-end">Sort By</button>
-                            </span>
-                            
-                            <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
-                            <span class="add">
-                                <button id="addItem" class="btn bg-transparent">
-                                    Add Item
-                                </button>
-                            </span>
+                        <div class="row mb-3">
+                            <div class="col-md">
+                                <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
+                            </div>
                         </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <span class="sort">
+                                    <button id="sortLS" class="btn bg-transparent"  onclick="sortList()">Sort By</button>
+                                </span>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <span class="add">
+                                    <button id="addItems" class="btn bg-transparent">
+                                        Add Item
+                                    </button>
+                                </span>
+                            </div>
+                            <button id="cleanBtn" class="btn bg-transparent mt-2 mb-2" >
+                                Clear
+                            </button>
+                        </div>
+                        
+                        
                         <ul class="todos" id="todos"></ul>
                       </form>
                 </div>

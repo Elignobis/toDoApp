@@ -5,7 +5,6 @@
 
 body {
   background-color: #504f4fce !important;
-  color: rgb(203, 72, 72);
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -30,18 +29,20 @@ form {
 ul li {
   background-color: rgb(171, 242, 127) !important;
   list-style: circle;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 ul li:nth-child(odd) {
   background-color: rgb(133, 133, 247) !important;
-  border-radius: 20px;
+  border-radius: 5px;
 }
+
+
 
 .input {
   border: none;
   color: #444;
-  font-size: 2rem;
+  font-size: 1.4rem;
   padding: 1rem 2rem;
   display: block;
   width: 100%;
@@ -60,7 +61,7 @@ ul li:nth-child(odd) {
   /* background-color: #fff; */
   padding: 0;
   margin: 0;
-  list-style-type: none;
+  list-style: decimal;
 }
 
 .todos li {
@@ -68,6 +69,13 @@ ul li:nth-child(odd) {
   cursor: pointer;
   font-size: 1.5rem;
   padding: 1rem 2rem;
+  list-style: decimal;
+}
+
+.todos li:hover {
+  color: #0808085f;
+  text-decoration: line-through rgba(255, 0, 0, 0.513);
+  list-style: disc;
 }
 
 .todos li.completed {
@@ -75,6 +83,7 @@ ul li:nth-child(odd) {
   text-decoration: line-through red;
   list-style: disc;
 }
+
 
 .todos li.completed:nth-child(odd){
   color: #2d3366;
@@ -101,29 +110,45 @@ small {
   -moz-box-shadow: 7px 8px 5px 0px rgba(0,0,0,0.75);
 }
 
-.sort {
-  display: flex;
-}
+
+
+
 
 .add {
   padding: 10px;
-  width: 25%;
+  margin: 0px;
+  width: 80%;
   background: rgb(232, 151, 22);
   color: #555;
   float: left;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
   border-radius: 20px;
+}
+.sort {
+  padding: 10px;
+  margin: 0px;
+  width: 80%;
+  background: rgb(246, 216, 66);
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+#cleanBtn {
+  background-color: aliceblue !important;
 }
 .add:hover {
   background-color: #bbb;
 }
-
-.Sortdv {
-  display: none;
+.sort:hover {
+  background-color: #bbb;
 }
+
+
 
 /* Style Scroll bar */
 
@@ -140,4 +165,9 @@ small {
 ::-webkit-scrollbar-thumb:hover {
   
   background: #555; 
+}
+
+.btn {
+  outline: none;
+  box-shadow: none;
 }
